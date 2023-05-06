@@ -2,24 +2,23 @@ import React from 'react';
 import { Image, StyleSheet , View, Dimensions, Text} from 'react-native';
 import topo from '../../assets/topo.png';
 import logo from '../../assets/logo.png';
+import Texto from '../components/Texto';
+
 
 const width = Dimensions.get('screen').width
 
 export default function Cesta(){
-  return<> 
+  return <> 
     <Image source={topo} style={estilos.topo}/>
-    <Text style={estilos.titulo}>Detalhe da cesta</Text>
-
+    <Texto style={estilos.titulo}>Detalhe ada cesta</Texto>
     <View  style={estilos.cesta}>
-      <Text style={estilos.nome}>Cesta de verduras</Text>
-
+      <Texto style={estilos.nome}>Cesta de verduras</Texto>
       <View style={estilos.fazenda}>
         <Image source={logo} style={estilos.imagemFazenda}/>
-        <Text style={estilos.nomeFazenda}>Jenny Jack Farm</Text>
+        <Texto style={estilos.nomeFazenda}>Jenny Jack Farm</Texto>
       </View>
-        
-      <Text style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda para sua sozinha</Text>
-      <Text style={estilos.preco}>R$40,00</Text>
+      <Texto style={estilos.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda para sua sozinha</Texto>
+      <Texto style={estilos.preco}>R$ 40,00</Texto>
     </View>
   </>  
 }
@@ -31,10 +30,11 @@ const estilos = StyleSheet.create ({
   },
 
   titulo: {
+    marginTop: 26,
     width: "100%",
     position: "absolute",
     textAlign: "center",
-    fontSize: 16,
+    fontSize: 19,
     lineHeight: 26,
     color: "white",
     fontWeight: "bold",
@@ -49,9 +49,8 @@ const estilos = StyleSheet.create ({
   nome: {
     color: "#464646",
     fontSize: 26,
-    lineHeight: 42,
-    fontWeight: "bold",    
-    fontFamily: "MontserratBold",  
+    lineHeight: 42,   
+    fontWeight: "bold"
   },
 
   fazenda: {
@@ -70,12 +69,12 @@ const estilos = StyleSheet.create ({
     fontSize: 16,
     lineHeight: 16,
     marginLeft: 12,
-    ontFamily: "MontserratRegular",
+    
   },
 
   descricao: {
     color: "#A3A3A3",
-    fontSize: 16,
+    fontSize: 19,
     lineHeight: 26,
   },
 

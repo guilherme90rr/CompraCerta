@@ -17,10 +17,10 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView>
+    <View>
       <StatusBar />
       <Cesta/>
-    </SafeAreaView>
+    </View>
   );
 }
 
