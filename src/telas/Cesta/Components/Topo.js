@@ -5,20 +5,20 @@ import topo from '../../../../assets/topo.png';
 
 const width = Dimensions.get('screen').width
 
-export default function Topo(){
+export default function Topo({ titulo }){
     return <>    
         <Image source={topo} style={estilos.topo}/>
-        <Texto style={estilos.titulo}>Detalhe ada cesta</Texto>
+        <Texto style={estilos.titulo}>{ titulo }</Texto>
     </>
 }
 
 const estilos = StyleSheet.create({
     topo: {
         width: "100%",
-        height: 178 / 968 * width,
+        height: 578 / 768 * width,
         fontFamily: "Montserrat"
       },
-      
+
     titulo: {
         marginTop: 26,
         width: "100%",
