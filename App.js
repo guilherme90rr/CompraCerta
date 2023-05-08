@@ -19,10 +19,10 @@ export default function App() {
   }
 
   return (
-    <View>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar />
       <Cesta {...mock} />
-    </View>
+    </SafeAreaView>
   );
-}
+} 
 
